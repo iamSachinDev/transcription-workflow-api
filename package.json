@@ -1,0 +1,82 @@
+{
+  "name": "transcription-workflow-api",
+  "version": "1.0.0",
+  "description": "Production-ready transcription service with Azure Speech-to-Text integration, workflow engine, and MongoDB indexing for scalability",
+  "main": "dist/server.js",
+  "author": {
+    "name": "Sachin Talekar",
+    "email": "sachin.talekar07@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iamSachinDev/transcription-workflow-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamSachinDev/transcription-workflow-api/issues"
+  },
+  "homepage": "https://github.com/iamSachinDev/transcription-workflow-api#readme",
+  "keywords": [
+    "transcription",
+    "workflow",
+    "azure",
+    "speech-to-text",
+    "mongodb",
+    "typescript",
+    "express",
+    "rest-api"
+  ],
+  "scripts": {
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.{ts,js,json,md}\"",
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "swagger-gen": "ts-node src/swagger.ts"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "mongodb": "^6.8.0",
+    "pino": "^9.0.0",
+    "pino-http": "^10.0.0",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^2.0.12",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "jest": "^29.6.0",
+    "mongodb-memory-server": "^8.12.0",
+    "neostandard": "^0.8.0",
+    "nodemon": "^3.1.11",
+    "pino-pretty": "^11.0.0",
+    "prettier": "^3.7.2",
+    "supertest": "^6.3.3",
+    "swagger-autogen": "^2.23.7",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

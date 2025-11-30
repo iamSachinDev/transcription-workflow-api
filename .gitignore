@@ -48,3 +48,4 @@ temp/
 
 # Artifacts (if not needed in repo)
 .gemini/
+node_modules

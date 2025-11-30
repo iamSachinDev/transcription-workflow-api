@@ -41,10 +41,31 @@
 
 ### Installation
 
+#### Option 1: Automated Setup (Recommended)
+
 ```bash
 # Clone the repository
-git clone <repository-url>
-cd voiceOWL
+git clone https://github.com/iamSachinDev/transcription-workflow-api.git
+cd transcription-workflow-api
+
+# Run automated setup script
+./setup.sh
+```
+
+The setup script will automatically:
+- ✅ Check prerequisites (Node.js 20+, MongoDB)
+- ✅ Install dependencies
+- ✅ Create `.env` from `.env.example`
+- ✅ Start MongoDB if needed
+- ✅ Run tests to verify setup
+- ✅ Generate Swagger documentation
+
+#### Option 2: Manual Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/iamSachinDev/transcription-workflow-api.git
+cd transcription-workflow-api
 
 # Install dependencies
 npm install
